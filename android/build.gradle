@@ -33,6 +33,7 @@ android {
         minSdkVersion 16
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    namespace "com.lazyarts.vikram.cached_video_player"
     lintOptions {
         disable 'InvalidPackage'
     }
