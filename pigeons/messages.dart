@@ -1,45 +1,41 @@
-// Copyright 2013 The Flutter Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
-// @dart = 2.9
+// @dart = 3.0
 
 import 'package:pigeon/pigeon_lib.dart';
 
 class TextureMessage {
-  int textureId;
+  int textureId = 0; // Default value
 }
 
 class LoopingMessage {
-  int textureId;
-  bool isLooping;
+  int textureId = 0; // Default value
+  bool isLooping = false; // Default value
 }
 
 class VolumeMessage {
-  int textureId;
-  double volume;
+  int textureId = 0; // Default value
+  double volume = 0.0; // Default value
 }
 
 class PlaybackSpeedMessage {
-  int textureId;
-  double speed;
+  int textureId = 0; // Default value
+  double speed = 1.0; // Default value
 }
 
 class PositionMessage {
-  int textureId;
-  int position;
+  int textureId = 0; // Default value
+  int position = 0; // Default value
 }
 
 class CreateMessage {
-  String asset;
-  String uri;
-  String packageName;
-  String formatHint;
-  Map<String, String> httpHeaders;
+  String asset = ''; // Default value
+  String uri = ''; // Default value
+  String packageName = ''; // Default value
+  String formatHint = ''; // Default value
+  Map<String, String> httpHeaders = {}; // Default value
 }
 
 class MixWithOthersMessage {
-  bool mixWithOthers;
+  bool mixWithOthers = false; // Default value
 }
 
 @HostApi(dartHostTestHandler: 'TestHostVideoPlayerApi')
