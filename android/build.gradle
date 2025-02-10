@@ -1,4 +1,4 @@
-group 'io.flutter.plugins.videoplayer'
+group 'com.lazyarts.vikram.cached_video_player'
 version '1.0-SNAPSHOT'
 def args = ["-Xlint:deprecation","-Xlint:unchecked","-Werror"]
 
